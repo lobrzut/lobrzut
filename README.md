@@ -2,6 +2,8 @@
 
 IT & cybersec admin · homelab · Python/FastAPI · self-hosted AI
 
+[LinkedIn](https://www.linkedin.com/in/lobrzut/) · Kraków, Poland
+
 ## Brain AI Hub
 
 Portable **second brain** — Ollama, vault, RAG, transcript distillation, MCP for Cursor & Claude Code.
