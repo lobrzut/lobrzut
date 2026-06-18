@@ -2,8 +2,6 @@
 
 IT & cybersec admin · homelab · Python/FastAPI · self-hosted AI
 
-[LinkedIn](https://www.linkedin.com/in/lobrzut/) · Kraków, Poland
-
 **Three separate projects** (different repos, dashboards, and ports):
 
 | | Brain AI Hub | AI Studio | NetDash |
