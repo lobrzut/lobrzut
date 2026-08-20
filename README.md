@@ -1,36 +1,44 @@
-# Hi, I'm lobrzut
+# lobrzut
 
-IT & cybersec admin · homelab · Python/FastAPI · self-hosted AI
+IT & cybersec admin · homelab · self-hosted AI
 
-**Three separate projects** (different repos, dashboards, and ports):
+## Pomnia
 
-| | Brain AI Hub | AI Studio | NetDash |
-|---|--------------|-----------|---------|
-| Port | `:7860` | `:7880` | `:18787` |
-| What | Ollama, vault, RAG, MCP | ComfyUI + ACE-Step | Homelab services dashboard |
+Local-first **memory layer for MCP agents**. Not an agentic wrapper — vault + RAG + MCP that agents actually use.
 
-## Brain AI Hub
+- Site: [pomnia.ai](https://pomnia.ai)
+- Product: [lobrzut/pomnia](https://github.com/lobrzut/pomnia) (AGPL-3.0-only)
+- Landing: [lobrzut/pomnia-landing](https://github.com/lobrzut/pomnia-landing)
 
-Second brain — Ollama, vault, RAG, transcript distillation, MCP for Cursor & Claude Code.
+**Install**
 
-[![Brain dashboard](https://raw.githubusercontent.com/lobrzut/brain/main/docs/screenshots/dashboard-home.png)](https://github.com/lobrzut/brain)
+- Windows: download from [pomnia.ai](https://pomnia.ai)
+- Linux server: `curl -fsSL https://pomnia.ai/install.sh | sh`
 
-**[brain](https://github.com/lobrzut/brain)** · [dev.to article](https://dev.to/lobrzut/self-hosted-second-brain-with-mcp-59d4)
+**Honesty:** archive blobs are AES-encrypted; the searchable index stays plaintext on disk. Protect the machine / folder.
 
-## AI Studio
+PL: warstwa pamięci pod MCP — lokalnie, bez chmury jako wymogu.
 
-Creative AI — ComfyUI (images/video) + ACE-Step (music). **Not Brain.**
-
-[![AI Studio](https://raw.githubusercontent.com/lobrzut/ai-studio/main/docs/screenshots/dashboard-home.png)](https://github.com/lobrzut/ai-studio)
-
-**[ai-studio](https://github.com/lobrzut/ai-studio)** · hub `:7880`, Comfy `:7871`, ACE `:7870`
+---
 
 ## NetDash
 
-Homelab dashboard — services, health checks, API keys, notes, LAN discovery. **Not Brain or AI Studio.**
+Homelab services dashboard — discovery, health, Docker monitoring. Strong self-hosted companion to the rest of the stack.
 
-[![NetDash](https://raw.githubusercontent.com/lobrzut/netdash/main/docs/screenshots/dashboard.png)](https://github.com/lobrzut/netdash)
+- Repo: [lobrzut/netdash](https://github.com/lobrzut/netdash)
+- Releases: [netdash/releases](https://github.com/lobrzut/netdash/releases)
+- Default port: `:18787`
 
-**[netdash](https://github.com/lobrzut/netdash)** · [releases](https://github.com/lobrzut/netdash/releases)
+---
 
-Comparison: [brain/docs/HOMELAB-PROJECTS.md](https://github.com/lobrzut/brain/blob/main/docs/HOMELAB-PROJECTS.md)
+## Also
+
+- **[ai-studio](https://github.com/lobrzut/ai-studio)** — ComfyUI + ACE-Step (`:7880`)
+
+---
+
+## Sunset: Brain AI Hub / Reliqua
+
+**Superseded by Pomnia.** The public [brain](https://github.com/lobrzut/brain) repo (old Brain AI Hub, dashboard `:7860`) remains for history and anyone still running it locally. Archiving on GitHub ≠ stopping a homelab service.
+
+Older write-up: [dev.to](https://dev.to/lobrzut/self-hosted-second-brain-with-mcp-59d4)
